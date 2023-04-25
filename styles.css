@@ -1,0 +1,58 @@
+.timeRowLight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	background-color: #FFFFF0;
+	padding: 2px;
+
+}
+.timeRowDark {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	background-color: #CCCCCC;
+}
+.redCell {
+	background-color: #FF0000;
+}
+.whiteSpace {
+	background-color: #ECE9D8;
+}
+.timeRowVeryDark {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	background-color: #999999;
+	color: #FFFFFF;
+
+}
+.datesHeaders {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.hourBox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000066;
+	background-color: #F3F3F3;
+	border: 1px ridge;
+}
+.totalHourBox {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #990000;
+	background-color: #F3F3F3;
+	border: 1px ridge;
+}
+.users {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+}
+.filledHour {
+
+	background-color: #000066;
+}

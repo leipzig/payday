@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>Easily Simple Calendar - Instructions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="4" color="#000000">Easily 
+  Simple Calendar<br>
+  </font> </b> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">&copy; 
+  2001-2002 <a href="http://www.esscripts.com" target="_blank"><font color="#000099">Easily 
+  Simple Scripts</font></a><br>
+  Latest Version: 3.1 - May 12, 2002</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b><font size="3">INSTRUCTIONS:</font></b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">To 
+  use this script, simply upload it to your server and type in its' address in 
+  a web browser. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Alternatively, 
+  use PHP includes or functions to integrate the ESCalendar script into your web 
+  pages. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Additionally, 
+  you can utilize any of the configuration file or the command-line variables 
+  below to completely customize the style, size, color, actions and more of the 
+  calendar. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">HINT</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">: 
+  Put the calendar in a table and make the background any color you wish or put 
+  a graphic in the background like the one at <a href="http://calendar.esscripts.com"><font color="#000099"><b>http://calendar.esscripts.com</b></font></a>.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">NOTE: 
+  To view the default calendar for the current month with the current day hightlighted, 
+  you do not need to use any of the command line variables below.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><b>CONFIGURATION 
+  FILE :</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Located 
+  in the download along with the escalendar.php script is a separate file named 
+  esconfig.php. This file conatins three sample configurations to which you can 
+  add, remove or change any that you wish. This file makes configuring the look 
+  of the ESCalendar very simple.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">To 
+  use a configuration, pass the <b>uc</b> variable along with the appropriate 
+  configuration number to the ESCalendar script. You can have almost an unlimited 
+  number of configurations in the esconfig.php file. These are actually arrays 
+  with different numbers for each configuration.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>Example:</b> 
+  http://www.yourdomain.com/escalendar.php?uc=1</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">By 
+  adding <b>?uc=1</b> to the URL, the ESCalendar script will look for the esconfig.php 
+  file and use the configuration with the number you specified, and in this case 
+  it would be 1. Simply replace the 1 with the configuration number you wish to 
+  use. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">If 
+  the esconfig.php file is not in the same folder as the ESCalendar script or 
+  your specify a congifuration number that does not exist, the calendar will still 
+  display but at it's default configuration.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">To 
+  customize your configuration file, use the <b>Calendar Creator</b> at </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+  <b><a href="http://calendar.esscripts.com/configure.php" target="_blank"><font color="#000066">http://calendar.esscripts.com/configure.php</font></a></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>NOTE:</b> 
+  All options in a configuration file will overwrite all command-line options 
+  including event marking. If you wish to pass these options to the script, do 
+  not use them in your configuration file.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"></font><font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000"><b>COMMAND 
+  LINE VARIABLES:</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">There 
+  are two ways to use command-line variables:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">The 
+  first way is used when loading the ESCalendar script directly in a web browser 
+  or via the PHP include function. After the full URL put a ? (question mark) 
+  before the first variable and put an &amp; (ampersand) between each of the other 
+  variables you want to set. Do not use any spaces. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">NOTE: 
+  You must call the full script URL address when sending command line variables 
+  via an include function.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">The 
+  second way, if using the ESCalendar script as a function, is to send each variable 
+  or set them as global within the function. (All of the calendars on the Easily 
+  Simple Calendar web site are used this way).</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">See 
+  <a href="http://www.php.net" target="_blank"><font color="#000099"><b>http://www.php.net</b></font></a> 
+  for help with functions and the include command.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">Many 
+  of these options can be set in the script itself, in the configuration file, 
+  or called via the command line. See the escalendar.php script for more information.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>mo</b><br>
+  MONTH TO DISPLAY<br>
+  </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">mo=mm<br>
+  Default: Current month if not specified</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>yr</b><br>
+  YEAR TO DISPLAY<br>
+  yr=yyyy <br>
+  Default: Current year if not specified</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>nt<br>
+  </b> DO NOT MARK TODAYS DATE<br>
+  nt=1<br>
+  Default: Mark todays date<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>ny<br>
+  </b> DO NOT DISPLAY THE YEAR<br>
+  ny=1<br>
+  Deafult: Display the year<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>es<br>
+  </b>START DATE OF DATE MARKING<br>
+  es=yyyy-mm-dd</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+  Default: None<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>ee<br>
+  </b> END DATE OF DATE MARKING<br>
+  ee=yyyy-mm-dd<br>
+  </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Default: 
+  None<br>
+  </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"> 
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">***<br>
+  To send multiple start and end dates, separate each date by an &quot;x&quot;.<br>
+  An example would be &quot;?es=2001-10-05x2001-11-1&amp;ee=2001-10-12x2001-11-8&quot;<br>
+  This marks Oct. 5, 2001 -- Oct. 12, 2001 and Nov. 1, 2001 -- Nov. 8, 2001.<br>
+  <br>
+  The date can be sent in most any format as long as the month appears before 
+  the day. For example, to mark December 19, 2001 you can use &quot;2001-12-19&quot;, 
+  &quot;12-19-2001&quot;,&quot;Dec 19, 2001&quot;,&quot;December 19 2001&quot;, 
+  and more. If you want to mark a date regardless of the year, just omit the year 
+  like &quot;12-19&quot;, or &quot;Dec 19&quot;.<br>
+  <br>
+  *** </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>ms<br>
+  </b> MARK STYLE<br>
+  calstyle=x<br>
+  Default: 1<br>
+  Setting '$ms' to 1 will mark calendar dates using table background colors [Style 
+  1 is the only option in any version before 2.0]<br>
+  Setting this to 2 will mark calendar dates using graphics for background colors. 
+  If using Style 2, all 'stat' graphics should be in the same directory as the 
+  ESCalendar script. You can edit the 'stat' graphics to meet your needs.<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>ds<br>
+  </b>DAY CALENDAR BEGINS<br>
+  ds=x<br>
+  Default: 0<br>
+  Valid options are 0=Sunday; 1=Monday; 2=Tuesday; 3=Wednesday; 4=Thursday; 5=Friday; 
+  6=Saturday<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>ot<br>
+  </b>HOURS TO OFFSET TIME +/-<br>
+  ot=x <br>
+  Defult: 0<br>
+  To add hours, enter a positive value. To subtract hours, enter a &quot;-&quot; 
+  negative value<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>tw<br>
+  th<br>
+  </b>tw=x CALENDAR TABLE WIDTH<br>
+  th=x CALENDAR TABLE HEIGHT<br>
+  Set $tw to the width of the calendar table (Defaults to 175)<br>
+  Set $th to the height of the calendar table (Defaults to 140)<br>
+  These options can be set in the script or overridden by the command-line options 
+  'tw=' and 'th='<br>
+  NOTE: The table may be smaller than specified for months with only 5 rows of 
+  dates. This is to keep the table cells in proportion with the calendars with 
+  six rows of dates.</font></p>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">al<br>
+  </font></b><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+  </font></b><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> DATE 
+  NUMBER ALIGNMENT</font><br>
+  al=x</font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><br>
+  Default: 0<br>
+  Set $al to 0 [default] to align the dates to the middle and center of table 
+  cells.<br>
+  Set $al to 1 to align the dates to the upper-right corner of table cells.<br>
+  Set $al to 2 to align the dates to the upper-left corner of table cells. <br>
+  This option can be set in the script or overridden by the command-line option 
+  'al='</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b> FONT SIZES 
+  AND WEIGHT</b><br>
+  These options can be set in the script or overridden by command-line options 
+  of the same named variables. The sizes are in pixels.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>fsm</b>=&quot;x&quot; 
+  FONT SIZE MONTH (Defaults to 18)<br>
+  <b>fsd</b>=&quot;x&quot; FONT SIZE DAY NAMES (Defaults to 9)<br>
+  <b>fsn</b>=&quot;x&quot; FONT SIZE NUMBERS (Defaults to 11)</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>fwm</b>=&quot;x&quot; 
+  FONT WEIGHT MONTH (Setting this to anything will change the month weight to 
+  normal)<br>
+  <b>fwd</b>=&quot;x&quot; FONT WEIGHT DAY NAMES (Setting this to anything will 
+  change the day names weight to bold)<br>
+  <b>fwn</b>=&quot;x&quot; FONT WEIGHT NUMBERS (Setting this to anything will 
+  change the numbers weight to bold)</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>TABLE CELL COLORS</b><br>
+  These options can be set in the script or overridden by command-line options 
+  of the same named variables.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>dtc </b>= Day 
+  Names Table Background Color<b><br>
+  nbc</b> = Normal Numbers Background Color<br>
+  </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>ntc </b>= 
+  Blank Numbers Background Color<b><br>
+  mtc </b>= Month and Year Table Background Color<b><br>
+  </b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b> </b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b><font size="3">EXAMPLE 
+  USE OF THIS SCRIPT:<br>
+  </font></b> http://www.yourdomain.com/escalendar.php?mo=12&amp;yr=2001&amp;es=2001-12-18&amp;ee=2001-12-20<br>
+  or include (&quot;http://www.yourdomain.com/escalendar.php?mo=12&amp;yr=2001&amp;es=2001-12-18&amp;ee=2001-12-20&quot;);<br>
+  </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"> 
+  Either of these will result in a calendar for December of 2001 with the dates 
+  12-18 through 12-20 marked.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">You 
+  can also use the ESCalendar Configurator at </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b><a href="http://calendar.esscripts.com/configure.php" target="_blank"><font color="#000066">http://calendar.esscripts.com/configure.php</font></a></b></font><b> 
+  </b><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">and 
+  see how to form command line variables and configuration files.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000"><b>If 
+  you are familiar with PHP programming, it is generally much faster using this 
+  script as a function within it's intended web page.</b></font></p>
+</body>
+</html>
