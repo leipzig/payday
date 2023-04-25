@@ -1,8 +1,8 @@
 <?PHP
 define ("DBNAME", "payday");
 define ("HOSTNAME", "mysql.ece.ncsu.edu");
-define ("USERNAME", "jnleipzi");
-define ("PASSWORD", "yxpqha8E");
+define ("USERNAME", "");
+define ("PASSWORD", "");
 
 class db
 {
